@@ -20,6 +20,10 @@ export async function GET() {
 
     return Response.json(files);
   } catch (error) {
+<<<<<<< HEAD
+=======
+    console.log(error);
+>>>>>>> 63bb175 (Fixed dynamic route (api/files/[filename]) type issue)
     return Response.json({ error: "Failed to read files" }, { status: 500 });
   }
 }
